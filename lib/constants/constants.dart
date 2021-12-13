@@ -37,3 +37,9 @@ const kSimpleAppBarTitleTextStyle = TextStyle(
   fontWeight: FontWeight.bold,
   color: kBlack,
 );
+
+const kAppBarWithTabbarTitleTextStyle = TextStyle(
+  color: Colors.black,
+  fontWeight: FontWeight.bold,
+  fontSize: 26,
+);

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:vietcetera_ui_clone/components/appbar.dart';
 import 'package:vietcetera_ui_clone/components/blog.dart';
 import 'package:vietcetera_ui_clone/components/tabbar_item.dart';
 import 'package:vietcetera_ui_clone/constants/constants.dart';
@@ -19,7 +20,20 @@ class _HomeScreenState extends State<HomeScreen> {
       length: 7,
       child: Scaffold(
         backgroundColor: kWhite,
-        appBar: AppBar(
+        appBar: AppBarWithTabBar(
+          title: 'Vietcetera',
+          isHomepageAppBar: true,
+          tabBarItemTitles: [
+            'Mới Nhất',
+            'Phổ Biến',
+            'Kinh Doanh',
+            'Cuộc Sống',
+            'Sáng Tạo',
+            'Thời Trang',
+            'Thưởng Thức'
+          ],
+        )
+        /* AppBar(
           backgroundColor: kWhite,
           elevation: 0,
           title: Center(
@@ -47,7 +61,8 @@ class _HomeScreenState extends State<HomeScreen> {
               TabBarItem(title: 'Thưởng Thức'),
             ],
           ),
-        ),
+        ) */
+        ,
         body: ListView.builder(
           itemCount: blogs.length,
           itemBuilder: (context, index) {

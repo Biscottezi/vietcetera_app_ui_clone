@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:vietcetera_ui_clone/constants/constants.dart';
+import 'package:vietcetera_ui_clone/screens/about_screen.dart';
 import 'package:vietcetera_ui_clone/screens/bookmark_screen.dart';
 import 'package:vietcetera_ui_clone/screens/category_screen.dart';
 import 'package:vietcetera_ui_clone/screens/home_screen.dart';
@@ -17,9 +18,7 @@ class _LayoutScreenState extends State<LayoutScreen> {
     HomeScreen(),
     CategoryScreen(),
     BookmarkScreen(),
-    Center(
-      child: Text('About'),
-    ),
+    AboutScreen(),
   ];
 
   @override
